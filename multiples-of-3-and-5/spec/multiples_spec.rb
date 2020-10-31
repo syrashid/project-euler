@@ -17,6 +17,6 @@ describe '#multiples' do
   end
 
   it 'should raise an error if passed anything besides an integer' do
-    expect(multiples('abc')).to raise_error(ArgumentError)
+    expect { multiples('abc') }.to raise_error(ArgumentError)
   end
 end
