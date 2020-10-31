@@ -8,8 +8,8 @@ describe '#multiples' do
   end
 
   it 'should return 233168 when passed nothing or 1000' do
-    expect(multiples).to eq(233168)
-    expect(multiples(1000)).to eq(233168)
+    expect(multiples).to eq(233_168)
+    expect(multiples(1000)).to eq(233_168)
   end
 
   it 'should return 0 when passed a negative value' do
