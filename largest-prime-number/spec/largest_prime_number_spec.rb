@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'file'
+require 'largest_prime_number'
 
 describe '#smoke_test' do
   it 'should return true' do
