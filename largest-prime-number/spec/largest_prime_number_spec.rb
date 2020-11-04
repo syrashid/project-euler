@@ -7,7 +7,7 @@ describe '#largest_prime_number' do
     expect(largest_prime_number(13_195)).to eq(29)
   end
 
-  xit 'should return 6857 when passed 600_851_475_143' do
+  it 'should return 6857 when passed 600_851_475_143' do
     expect(largest_prime_number(600_851_475_143)).to eq(6857)
   end
 
