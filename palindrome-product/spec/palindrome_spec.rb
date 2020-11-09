@@ -3,8 +3,8 @@
 require 'palindrome'
 
 describe '#three_palindrome' do
-  it 'should return X' do
-    expect(three_palindrome[:answer]).to eq(0)
+  it 'should return 906609' do
+    expect(three_palindrome[:answer]).to eq(906609)
   end
 end
 
