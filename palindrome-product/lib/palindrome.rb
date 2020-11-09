@@ -8,8 +8,7 @@ def three_palindrome
     (0..899).each do |j|
       product = (999 - i) * (999 - j)
       if palindromic_number?(product) && product > answer_hash[:answer]
-        answer_hash[:answer] = product
-        answer_hash[:values] = [999 - i, 999 - j]
+        answer_hash.merge!(answer: product, values: [999 - i, 999 - j])
       end
     end
   end
