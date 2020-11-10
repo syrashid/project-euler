@@ -3,7 +3,7 @@
 require 'smallest_multiple'
 
 describe '#smallest_multiple' do
-  it 'should return true' do
-    expect(smallest_multiple).to be true
+  it 'should return X value' do
+    expect(smallest_multiple).to eq(0)
   end
 end
