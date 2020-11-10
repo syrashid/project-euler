@@ -4,6 +4,6 @@ require 'smallest_multiple'
 
 describe '#smallest_multiple' do
   it 'should return X value' do
-    expect(smallest_multiple).to eq(232792560)
+    expect(smallest_multiple).to eq(232_792_560)
   end
 end
