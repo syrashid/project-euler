@@ -18,5 +18,26 @@ def evenacci(first = 1, second = 1)
 end
 
 def goldenacci
+  # When we take any two successive (one after the other) Fibonacci Numbers,
+  # their ratio is very close to the Golden Ratio which is approximately
+  # 1.618034
 
+  # We also know that every third number is even, and with that in mind
+  # we can use the golden ratio and the third indexes to solve
+
+  # The equation for any fibonacci number is as follows
+  # xn = (golden_ratio)^n - (1 - golden_ratio)^6 / sqrt(5)
+  val = 2
+  n = 3
+  sum = 0
+  while val < 4_000_000
+    sum += val
+    n += 3
+    val = calc_fib_number(n)
+  end
+  sum
+end
+
+def calc_fib_number(num)
+  ((((1.618033988**num) - ((1 - 1.618033988)**num)) / Math.sqrt(5))).round
 end
