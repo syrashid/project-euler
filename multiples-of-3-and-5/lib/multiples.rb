@@ -6,7 +6,7 @@ def multiples(int = 1000)
   # TODO: Find the sum of all the multiples of 3 or 5 below 1000.
   raise ArgumentError, 'Argument is not an integer' unless int.is_a? Integer
 
-  (0...int).inject(0) do |sum, n|
+  (3...int).inject(0) do |sum, n|
     (n % 3).zero? || (n % 5).zero? ? (sum + n) : sum
   end
 end
