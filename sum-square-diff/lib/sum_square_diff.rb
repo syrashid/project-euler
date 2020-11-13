@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-def smoke_test
+def sum_square_diff
   # TODO: Return true
-  true
+  0
 end
