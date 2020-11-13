@@ -3,8 +3,12 @@
 require 'sum_square_diff'
 
 describe '#sum_square_diff' do
-  it 'should return 25_164_150 when passed nothing or 100' do
+  it 'should return 25_164_150 when passed nothing' do
     expect(sum_square_diff).to eq(25_164_150)
+  end
+
+  it 'should return 25_164_150 when passed 100' do
+    expect(sum_square_diff(100)).to eq(25_164_150)
   end
 
   it 'should return 2640 when passed 10' do
