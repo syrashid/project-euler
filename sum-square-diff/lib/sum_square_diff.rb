@@ -10,6 +10,7 @@ def sum_square_diff(limit = 100)
   # square_sum - sum_squares
 
   # Elegant solution
+  # Proof found here: https://www.youtube.com/watch?v=TeF09H13qyI
   sum = limit * (limit + 1) / 2
   sum_square = (2 * limit + 1) * (limit + 1) * limit / 6
   sum**2 - sum_square
