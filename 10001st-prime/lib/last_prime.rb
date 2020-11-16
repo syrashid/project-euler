@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-def smoke_test
+def last_prime
   # TODO: Return true
   true
 end
