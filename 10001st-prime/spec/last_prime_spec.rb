@@ -12,7 +12,7 @@ describe '#last_prime' do
   end
 
   it 'should return X when passed nothing or 10_001' do
-    expect(last_prime(10_001)).to eq(13)
-    expect(last_prime).to eq(13)
+    expect(last_prime(10_001)).to eq(104743)
+    expect(last_prime).to eq(104743)
   end
 end

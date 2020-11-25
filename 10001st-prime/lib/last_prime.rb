@@ -28,5 +28,3 @@ def last_prime(index = 10_001)
   prime_nums[index + 1]
 end
 
-
-puts last_prime
