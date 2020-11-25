@@ -24,7 +24,8 @@ def last_prime(index = 10_001)
   prime_bools.each_with_index do |bool, index|
     prime_nums << index if bool
   end
-  prime_nums
+
+  prime_nums[index + 1]
 end
 
 
