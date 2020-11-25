@@ -14,6 +14,8 @@ end
 
 def generate_prime_bools
   # SET UP PRIME NUMBER SIEVE (OF ERATOSTHENES)
+  # https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+  # See algorithm ^
 
   # Set an upper limit on how many numbers to sieve
   upper_lim = 150_000
