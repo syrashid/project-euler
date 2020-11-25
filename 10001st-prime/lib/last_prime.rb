@@ -19,7 +19,7 @@ def generate_prime_bools
   prime_bools = Array.new(upper_lim, true)
   # Create range of numbers we'll use to iterate over booleans
   test_vals = (2..Math.sqrt(upper_lim).floor).to_a
-  # Iterate over test_vals and set prime_indices to false based off test_vals
+  # Iterate over test_vals and set prime_indices to false based off test_val multiples
   test_vals.each do |val|
     next unless prime_bools[val]
 
