@@ -9,7 +9,7 @@ def last_prime(index = 10_001)
   prime_bools = Array.new(upper_lim, true)
   # Create range of numbers we'll use to iterate over booleans
   test_vals = (2..Math.sqrt(upper_lim).floor).to_a
-  # Iterate over test_vals and set prime_indexes to false based off test_vals
+  # Iterate over test_vals and set prime_indices to false based off test_vals
   test_vals.each do |val|
     if prime_bools[val]
       multipliers = (2..upper_lim/2).to_a
@@ -19,8 +19,13 @@ def last_prime(index = 10_001)
     end
   end
 
-  puts prime_bools.select { |bool| bool }.count
+  # ASSOCIATE POSITION WITH PRIME NUMBER INDICES
+  prime_nums = []
+  prime_bools.each_with_index do |bool, index|
+    prime_nums << index if bool
+  end
+  prime_nums
 end
 
 
-last_prime
+puts last_prime
