@@ -10,4 +10,8 @@ describe '#last_prime' do
   it 'should return 13 when passed 6' do
     expect(last_prime(6)).to eq(13)
   end
+
+  it 'should return X when passed nothing or 10001' do
+    expect(last_prime(10001)).to eq(13)
+  end
 end
