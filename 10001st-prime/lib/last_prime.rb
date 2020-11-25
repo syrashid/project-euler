@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def last_prime(index = 10_001)
-  # SET UP PRIME NUMBER SIEVE
+  # SET UP PRIME NUMBER SIEVE (OF ERATOSTHENES)
 
   # Set an upper limit on how many numbers to sieve
   upper_lim = 150_000
@@ -13,8 +13,8 @@ def last_prime(index = 10_001)
   test_vals.each do |val|
     if prime_bools[val]
       multipliers = (2..upper_lim/2).to_a
-      multipliers.each do |multiplier|
-        prime_bools[val*multiplier] = false
+      multipliers.each do |m|
+        prime_bools[val*m] = false
       end
     end
   end
