@@ -5,8 +5,8 @@ def last_prime(index = 10_001)
 
   # ASSOCIATE POSITION WITH PRIME NUMBER INDICES
   prime_nums = []
-  prime_bools.each_with_index do |bool, index|
-    prime_nums << index if bool
+  prime_bools.each_with_index do |bool, i|
+    prime_nums << i if bool
   end
 
   prime_nums[index + 1]
