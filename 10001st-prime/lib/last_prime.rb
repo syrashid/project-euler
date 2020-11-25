@@ -4,11 +4,7 @@ def last_prime(index = 10_001)
   prime_bools = generate_prime_bools
 
   # ASSOCIATE POSITION WITH PRIME NUMBER INDICES
-  prime_nums = []
-  prime_bools.each_with_index do |bool, i|
-    prime_nums << i if bool
-  end
-
+  prime_nums = prime_bools.filter_map.with_index { |bool, i| i if bool }
   prime_nums[index + 1]
 end
 
