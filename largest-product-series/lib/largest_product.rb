@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-def smoke_test
+def largest_product(length=4)
   # TODO: Return true
   true
 end
