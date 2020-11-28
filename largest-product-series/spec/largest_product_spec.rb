@@ -11,7 +11,7 @@ describe '#largest_product' do
     expect(largest_product(4)).to eq 5832
   end
 
-  it 'should return X when passed 4' do
-    expect(largest_product(4)).to eq 5832
+  it 'should return 23514624000 when passed 13' do
+    expect(largest_product(13)).to eq 0
   end
 end
