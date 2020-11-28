@@ -8,6 +8,10 @@ describe '#largest_product' do
   end
 
    it 'should return 5832 when passed 4' do
-    expect(largest_product).to eq 5832
+    expect(largest_product(4)).to eq 5832
+  end
+
+  it 'should return X when passed 4' do
+    expect(largest_product(4)).to eq 5832
   end
 end
