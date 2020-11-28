@@ -1,11 +1,8 @@
 # frozen_string_literal: true
+
 require 'pry-byebug'
 
-def largest_product(adj_length=4)
-  # The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
-  # Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
-  # Thousand Digit Number = tdn
-  tdn = "\
+TDN = "\
   73167176531330624919225119674426574742355349194934\
   96983520312774506326239578318016984801869478851843\
   85861560789112949495459501737958331952853208805511\
@@ -27,10 +24,19 @@ def largest_product(adj_length=4)
   05886116467109405077541002256983155200055935729725\
   71636269561882670428252483600823257530420752963450\
   "
-  digits = tdn.chars.reject { |d| d == " " }
+
+def largest_product(adj_length = 4)
+  # The four adjacent digits in the 1000-digit number that have the greatest product are 9 x 9 x 8 x 9 = 5832.
+  # Find the thirteen adjacent digits in the 1000-digit number that have the greatest product.
+  # What is the value of this product?
+  # Thousand Digit Number = tdn
+
+  digits = TDN.chars.reject { |d| d == ' ' }
   top_product = 0
-  digits.each.with_index do |digit, index|
-    break if index > tdn.chars.length - adj_length
+  digits.each.with_index do |_digit, index|
+    # Guard clause to prevent useless iteration at end of array
+    break if index > TDN.chars.length - adj_length
+
     current_product = calc_product(digits.slice(index, adj_length))
     top_product = current_product if current_product > top_product
   end
